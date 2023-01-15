@@ -5,9 +5,8 @@
   2. [Installation Instructions](#installation-instructions)
   3. [How To Use](#how-to-use)
   4. [How To Contribute](#how-to-contribute)
-  6. [Testing](#testing)
-  7. [License](#license)
-  8. [Contact Me](#contact-me)
+  5. [Testing](#testing)
+  6. [Contact Me](#contact-me)
 
   ## Project Description
   * This application allows the user to maintain a daily to-do schedule (one day at a time) for a standard 9-5 workday. Enter your tasks in the corresponding workday timeblock and save to store your data. This task will remain saved to the application locally until you replace/erase via subsequent save. Even if you refresh the page!
@@ -24,9 +23,8 @@
   ## Testing
   * No tests are currently available
 
-Deployed Link: https://kabdomora.github.io/AllInADay/
-Deployed screenshot: ![Screenshot](Screenshot-deployed.PNG)
-  
+  Deployed Link: https://kabdomora.github.io/AllInADay/
+  Deployed screenshot: ![Screenshot](Screenshot-deployed.PNG)
 
   ## Contact Me
   * Find me on Github: [kabdomora](http://github.com/kabdomora)

@@ -19,8 +19,13 @@ for (let i = 0; i < timeBlock.length; i++) {
   }
 }
 
+$('.saveBtn').on('click', function(event) {
+  event.preventDefault();
 
-formatBlocks();
+  var tasks = $(this).siblings('.description').get(0).value;
+  localStorage.setItem($(this).attr('id'), tasks);
+})
+
 
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should

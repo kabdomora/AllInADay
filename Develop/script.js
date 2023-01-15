@@ -5,7 +5,8 @@ $(function () {
 var currentDay = dayjs();
 
 $('#currentDay').text(currentDay.format('dddd, MMMM DD'));
-$('#currentTime').text(currentDay.format('hh:mm a'));
+$('#currentTime').text(currentDay.format('hh:mm a')); 
+//option to display time at top of page
 // 
 
 // Past, present and future formatting

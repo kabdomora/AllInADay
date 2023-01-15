@@ -1,6 +1,30 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+var currentDay = dayjs();
+// var currentTime = dayjs().hour();
+$('#currentDay').text(currentDay.format('dddd, MMMM DD'));
+$('#currentTime').text(currentDay.format('hh:mm a'));
+
+let timeBlock = [9,10,11,12,1,2,3,4,5]
+let now = currentDay.format('hh');
+
+for (let i = 0; i < timeBlock.length; i++) {
+  if(timeBlock[i] < now) {
+    $('#hour-' + timeBlock[i]).addClass('past');
+    // all blocks should be green
+  } else if (timeBlock[i] === now) {
+    $('#hour-' + timeBlock[i]).addClass('present');
+    // all blocks should be grey
+  } else {
+    $('#hour-' + timeBlock[i]).addClass('future');
+    // write code for variable coloring
+  }
+}
+
+
+formatBlocks();
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in

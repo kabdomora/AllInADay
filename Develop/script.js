@@ -6,19 +6,16 @@ var currentDay = dayjs();
 $('#currentDay').text(currentDay.format('dddd, MMMM DD'));
 $('#currentTime').text(currentDay.format('hh:mm a'));
 
-let timeBlock = [9,10,11,12,1,2,3,4,5]
-let now = currentDay.format('hh');
+let timeBlock = [9,10,11,12,13,14,15,16,17]
+let now = currentDay.format('HH');
 
 for (let i = 0; i < timeBlock.length; i++) {
   if(timeBlock[i] < now) {
     $('#hour-' + timeBlock[i]).addClass('past');
-    // all blocks should be green
   } else if (timeBlock[i] === now) {
     $('#hour-' + timeBlock[i]).addClass('present');
-    // all blocks should be grey
   } else {
     $('#hour-' + timeBlock[i]).addClass('future');
-    // write code for variable coloring
   }
 }
 
